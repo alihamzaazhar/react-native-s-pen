@@ -2,6 +2,8 @@
 
 React Native 0.86+ library for Samsung S Pen input, built with TurboModules and a Fabric-compatible native canvas.
 
+**Keywords:** React Native, Android, Samsung S Pen, stylus, Air Actions, Air Motion, pressure-sensitive drawing, TurboModule, Fabric
+
 ## Features
 
 - Stylus down, move, up, and hover events
