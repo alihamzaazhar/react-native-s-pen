@@ -1,7 +1,8 @@
 {
   "name": "react-native-s-pen",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React Native library for Samsung S Pen support on Android",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/alihamzaazhar/react-native-s-pen.git"
