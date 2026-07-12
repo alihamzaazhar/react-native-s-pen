@@ -1,0 +1,27 @@
+.DS_Store
+.idea/
+.vscode/
+*.iml
+
+node_modules/
+example/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+android/.gradle/
+android/build/
+example/android/.gradle/
+example/android/build/
+example/android/app/build/
+example/android/app/.cxx/
+example/android/local.properties
+
+# Samsung Developer Portal binaries may not be redistributed.
+android/libs/*.jar
+android/libs/*.aar
+example/android/app/src/main/libs/*.jar
+example/android/app/src/main/libs/*.aar
+
+# Keep the Gradle wrapper binary under source control.
+!example/android/gradle/wrapper/gradle-wrapper.jar

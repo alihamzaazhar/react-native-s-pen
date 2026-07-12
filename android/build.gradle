@@ -1,0 +1,33 @@
+apply plugin: "com.android.library"
+apply plugin: "com.facebook.react"
+
+android {
+  namespace "com.samsungspen"
+  compileSdkVersion 36
+
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 36
+    consumerProguardFiles "consumer-rules.pro"
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+    }
+  }
+}
+
+react {
+  root = file("..")
+  jsRootDir = file("..")
+  reactNativeDir = file("../../react-native")
+  codegenDir = file("../../@react-native/codegen")
+  codegenJavaPackageName = "com.samsungspen"
+}
+
+dependencies {
+  implementation("com.facebook.react:react-android")
+  compileOnly fileTree(dir: "libs", include: ["*.jar", "*.aar"])
+  compileOnly fileTree(dir: rootProject.file("app/src/main/libs"), include: ["*.jar", "*.aar"])
+}
